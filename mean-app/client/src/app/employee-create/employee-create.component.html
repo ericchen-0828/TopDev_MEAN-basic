@@ -1,0 +1,16 @@
+<h2>Create Employee</h2>
+<form (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="Name" [(ngModel)]="employee.name" name="name" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Position" [(ngModel)]="employee.position" name="position" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Department" [(ngModel)]="employee.department" name="department" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Salary" [(ngModel)]="employee.salary" name="salary" required>
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Create Employee</button>
+</form>
